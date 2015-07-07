@@ -1,0 +1,146 @@
+OnLoadMission = "[ARCSEC] : ARCSECURITY.ORG<br/><br/>Be sure to check the Briefing tab of the map before starting the mission.";
+respawn = BASE;
+respawndelay = 30;
+disabledAI = false;
+enableDebugConsole = 2;
+author = "[ARCSEC] Siegen";
+
+#include "VAS\menu.hpp"
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class Header
+{
+	gameType = Coop;
+};
+
+class Params
+{
+	class Allow3rdPerson
+	{
+		title = "Allow 3rd Person View";
+		values[] = {0,1,2,3};
+		texts[] = {"Always Allowed","Only for Vehicles","Only for Infantry","Always Disabled"};
+		default = 0;
+		file = "ForceFPV.sqf";
+	};
+};
+
+class CfgDebriefing
+{  
+	class B_Success
+	{
+		title = "MISSION SUCCESS";
+		subtitle = "";
+		description = "The HVT and his contact were successfully eliminated.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+	class O_Failure
+	{
+		title = "MISSION FAILURE";
+		subtitle = "";
+		description = "The HVT and his contact were killed.";
+		pictureBackground = "";
+		picture = "b_inf";
+	};
+		
+	class B_Failure
+	{
+		title = "MISSION FAILURE";
+		subtitle = "";
+		description = "The HVT and his contact escaped.";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+	class O_Success
+	{
+		title = "MISSION SUCCESS";
+		subtitle = "";
+		description = "The HVT and his contact were unharmed.";
+		pictureBackground = "";
+		picture = "b_inf";
+	};
+}
+
+class CfgRadio
+{
+	sounds[] = {};
+	
+	class MarkEPatrol
+	{
+		name = "";
+		sound[] = {"\sound\MarkEPatrol.ogg", db-10, 1.0};
+		title = "Recon 1-4, visual on an OPFOR patrol to the East of Charlie-4. Marked as Papa-1.";
+	};
+	
+	class MarkNWPatrol
+	{
+		name = "";
+		sound[] = {"\sound\MarkNWPatrol.ogg", db-10, 1.0};
+		title = "Recon 1-4, visual on an OPFOR patrol to the North West of Charlie-4. Marked as Papa-3.";
+	};
+	
+	class MarkSPatrol
+	{
+		name = "";
+		sound[] = {"\sound\MarkSPatrol.ogg", db-10, 1.0};
+		title = "Recon 1-4, visual on an OPFOR patrol to the South of Charlie-4. Marked as Papa-2.";
+	};
+	
+	class MarkContactApproach
+	{
+		name = "";
+		sound[] = {"\sound\MarkContactApproach.ogg", db-10, 1.0};
+		title = "Recon 1-4, eyes on an OPFOR officer, on foot, entering Charlie-4 from the Eastern road.";
+	};
+	
+	class MarkRomeo1
+	{
+		name = "";
+		sound[] = {"\sound\MarkRomeo1.ogg", db-10, 1.0};
+		title = "Recon 1-4, that OPFOR officer just entered a two story building at the center of the town. Could be the rendezvous point. Marked Romeo-1.";
+	};
+		
+	class MarkCharlie4
+	{
+		name = "";
+		sound[] = {"\sound\MarkCharlie4.ogg", db-10, 1.0};
+		title = "Recon 1-4, convoy has reached destination. Visual on two fire teams disembarking.";
+	};
+	
+	class MarkHVTEmbark
+	{
+		name = "";
+		sound[] = {"\sound\MarkHVTEmbark.ogg", db-10, 1.0};
+		title = "This is Recon 1-1, HVT embarking. Three vehicles in convoy. HVT vehicle unknown.";
+	};
+	
+	class MarkDeviation
+	{
+		name = "";
+		sound[] = {"\sound\MarkDeviation.ogg", db-10, 1.0};
+		title = "Recon 1-1, convoy has deviated from expected path. Headed North East, just North of the original route. Marked Charlie-5.";
+	};
+	
+	class MarkCharlie2
+	{
+		name = "";
+		sound[] = {"\sound\MarkCharlie2.ogg", db-10, 1.0};
+		title = "This is Recon 1-2, convoy entering Charlie-2. Confirmed, one HMG technical at the lead.";
+	};
+	
+	class MarkCharlie3
+	{
+		name = "";
+		sound[] = {"\sound\MarkCharlie3.ogg", db-10, 1.0};
+		title = "This is Recon 1-3, the convoy is entering Charlie-3.";
+	};
+};

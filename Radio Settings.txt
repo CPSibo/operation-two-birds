@@ -1,0 +1,40 @@
+Radio Settings:
+	Recon 1-1:
+		Gain: +20db
+		Pitch: +6%
+		Vocorder:
+			Distance: 				3.0
+			Number of vocorder bands: 	12
+			Amplitude of original audio: 	100
+			Amplitude of white noise: 	9
+			Amplitude of Radar Needles: 	33
+			Frequency of Radar Needles: 	53.3
+	Recon 1-1:
+		Gain: +20db
+		Pitch: +12%
+		Vocorder:
+			Distance: 				3.0
+			Number of vocorder bands: 	12
+			Amplitude of original audio: 	100
+			Amplitude of white noise: 	24
+			Amplitude of Radar Needles: 	69
+			Frequency of Radar Needles: 	43.7
+	Recon 1-1:
+		Gain: +20db
+		Pitch: +4%
+		Vocorder:
+			Distance: 				3.0
+			Number of vocorder bands: 	50
+			Amplitude of original audio: 	100
+			Amplitude of white noise: 	50
+			Amplitude of Radar Needles: 	100
+			Frequency of Radar Needles: 	30.0
+	Recon 1-4:
+		Gain: +20db
+		Vocorder:
+			Distance: 				2.0
+			Number of vocorder bands: 	10
+			Amplitude of original audio: 	100
+			Amplitude of white noise: 	13
+			Amplitude of Radar Needles: 	33
+			Frequency of Radar Needles: 	53.3

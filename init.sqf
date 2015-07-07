@@ -1,0 +1,1 @@
+squadsAtBase = 0;
